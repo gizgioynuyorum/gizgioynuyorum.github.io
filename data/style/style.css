@@ -1,0 +1,19 @@
+@charset "utf-8";
+body {
+        background:#181A1B;
+      }
+      
+.b2 {
+    font:bold 40px tahoma;
+    color:#fff;
+    text-align:center;
+      }
+
+.logo{
+    width:13%;
+    margin:5% 0 0 44%;
+}
+
+.youtubelink{
+    font:bold 10px tahoma;
+}
