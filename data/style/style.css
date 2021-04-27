@@ -15,5 +15,7 @@ body {
 }
 
 .youtubelink{
-    font:bold 10px tahoma;
+    font:bold 20px tahoma;
+    text-align:center;
 }
+
