@@ -3,11 +3,59 @@
     <link type="text/css" rel="stylesheet" href="data/style/style.css">
 <meta charset="utf-8">
 <title>Gizgi Oynuyorum</title>
+    <style>
+        .vakit {
+            vertical-align:middle;
+            font-family:Arial;
+            font-size:40px;
+            font-weight:normal;
+            color:#FFF;
+            padding:0 10px;
+        }
+       .saat {
+           vertical-align: middle;
+           font-family:Arial;
+           font-size:20px;
+           font-weight:normal;
+           color:#FFF;
+        }
+        .zemin {
+            background-color:F3F3F3;
+            max-width:220px;
+            width:100%;
+            margin: 0 auto;
+            padding:20px;
+        }
+    </style>
 </head>
 
-<body>
+<body onload="vakit();" >
     <img class="logo" src="data/images/logo.png">
     <h1 class="b2">ÇOK YAKINDA!</h1>
     <div class="youtubelink"><a href="https://www.youtube.com/channel/UC2OWHVjRnEOuSLpt5ZnTdrA" target="_blank">Youtube</a></div>
+    <div class="zemin">
+        <table class="taBlock" align="center" cellspacing="0" cellpadding="0" border"0">
+            <tr> <td class="vakit" id="zaman" > </td>
+                <td> 
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr> <td class="saat" id="dt_saat">😉</td> </tr>
+                        tr> <td class"saat" id="dt_saniye"></td></tr>
+                    </table>
+               </td>
+           </tr>              
+       </table>
+<script>
+    function vakit() {
+    var zaman = new Date() ;
+    var saat = zaman.gethours() ;
+    var dakika = zaman.getminutes() ;
+          document.getElementById('zaman').innerHTML = saat + ":" + dakika;
+        document.getElementById('zaman_saniye').innerHTML = saniye;
+      var time
+        time = setInterval('vakit()', 1000);
+        
+        
+    }
+</script>    
 </body>
 </html>
