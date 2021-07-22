@@ -1,1 +1,0 @@
-# gizgioynuyorum.github.io

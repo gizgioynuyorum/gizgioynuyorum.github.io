@@ -1,0 +1,41 @@
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="data/style/style.css">
+<meta charset="utf-8">
+<title>Gizgi Oynuyorum</title>
+    
+</head>
+
+<body onload="vakit();" >
+    <img class="logo" src="data/images/logo.png">
+    <h1 class="b2">ÇOK YAKINDA!</h1>
+    <div class="youtubelink"><a href="https://www.youtube.com/channel/UC2OWHVjRnEOuSLpt5ZnTdrA" target="_blank" class="youtubelink2">Youtube</a></div>
+    
+     <div class="zemin">
+        <table class="taBlock" align="center" cellspacing="0" cellpadding="0" border"0">
+            <tr> <td class="vakit" id="zaman" > </td>
+                <td> 
+                    <table cellpadding="0" cellspacing="0" border="0">
+                        <tr> <td class="saat" id="zaman_saat"></td> </tr>
+                        <tr> <td class"saat" id="zaman_saniye"></td></tr>
+                    </table>
+               </td>
+           </tr>
+       </table>
+    </div>
+</body>
+<script>
+    function vakit() {
+    var zaman = new Date() ;
+    var saat = zaman.getHours() ;
+    var dakika = zaman.getMinutes() ;
+    var saniye = zaman.getSeconds();
+          document.getElementById('zaman').innerHTML = saat + ":" + dakika;
+        document.getElementById('zaman_saniye').innerHTML = saniye;
+      var time
+        time = setInterval('vakit()', 1000);
+
+
+    }
+</script>
+</html>
